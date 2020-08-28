@@ -1,0 +1,283 @@
+@import url(../global/global.css);
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+i {
+    color: #F32C1E !important;
+}
+
+:root {
+    --primary-color: #F32C1E;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #F30A0A 0%, #85d9f7 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    --roboto: "Roboto", cusrive;
+}
+
+/*Start Navigation*/
+
+.navbar-brand {
+    padding: 0.2rem 0.5rem;
+}
+
+.navbar .navbar-brand {
+    color: var(--primary-color);
+}
+
+.navbar {
+    padding: 1rem 15rem;
+}
+
+.nav-link {
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: #000;
+}
+
+.navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*End Navigation*/
+
+/*Service Heading*/
+
+.service-tag {
+    background: var(--gradient-color);
+    padding: 5rem 0;
+    margin: 2rem auto;
+}
+
+.service-tag h1 {
+    color: whitesmoke;
+    font-size: 4rem;
+}
+
+/*Service heading end*/
+
+/*Main Services*/
+
+.service-part {
+    padding: 8rem 5rem;
+}
+
+.service-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.service-image{
+    line-height: 15px;
+}
+
+.paragraph > p {
+    padding: .4rem 0;
+}
+
+/*Sidebar area start*/
+
+.sidebar {
+    margin-bottom: 30px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.sidebar {
+    background: var(--gradient-color);
+    padding: 25px;
+}
+
+.service-image{
+    padding-top: 10px;
+}
+
+.side_tags {
+    list-style-type: none;
+    padding: 0 10px 5px !important;
+}
+
+.side_tags li {
+    margin: 7px 0;
+    /* background: #56b6f6; */
+    transition: 0.05s ease;
+    border: 2px whitesmoke solid;
+}
+
+.side_tags li a {
+    padding: 2px 10px;
+    display: block;
+    transition: 0.05s ease;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.side_tags li a:hover {
+    color: #fff;
+    background: #F32C1E;
+}
+
+
+/*Sidebar area end*/
+
+/*project with me start*/
+
+.project-with-me{
+    background: var(--gradient-color);
+    padding: 3.5rem 0;
+    margin: 2rem auto;
+}
+
+.project-with-me h1{
+    color: whitesmoke;
+    font-size: 4rem;
+}
+
+.project-with-me h3{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.project-with-me p{
+    font-size: 1.4rem;
+    color: dodgerblue;
+}
+
+/*project with me end*/
+
+/*FOOTER AREA STRAT*/
+footer.footer-area{
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.site-logo .logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--roboto);
+    text-decoration: none;
+}
+
+.social h5{
+    font: normal 500 23px/30px var(--roboto);
+}
+
+.social a>i{
+    font-size: 22px;
+    padding: 2rem;
+}
+
+/*FOOTER AREA END*/
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width:340px){
+    .header-part .main-menu .navbar,
+    .header-part .main-menu .navbar .navbar-brand,
+    .subscibe-us-area .subscribe .subscribe-title p,h4,
+    .services-area,
+    .subscibe-us-area .subscribe
+    {
+        padding: 2%;
+        margin: 0;
+    }
+    
+    .site-banner .site-title h1{
+        font-size: 41px;
+    }
+    
+    .about-area .paragraph p .para p{
+        font-size: 20px;
+    }
+    
+    .subscibe-us-area .subscribe form .input-textbox{
+        width: 15rem !important;
+    }
+    
+    .services-area .services{
+        width: 13rem;
+    }
+    
+}
+
+@media only screen and (max-width:792px){
+    .site-main .about-area .about-title h2>span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    
+    .site-main .brand-area.experience-area .years-area{
+        padding: 1%;
+        width: 49%;
+    }
+    
+    .site-main .brand-area.experience-area .bg-panel{
+        margin-left: 30%;
+        width: 80%;
+    }
+    
+    .site-main .brand-area.experience-area .call-area{
+        padding-left: 3%;
+    }
+    
+    .site-main .project-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+    
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+    
+    .site-main .subscibe-us-area .subscribe form .input-textbox{
+        width: 20rem;
+        margin: 5%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1920px){
+    .header-part .main-menu .navbar{
+        padding: 1rem;
+    }
+    
+    .container{
+        max-width: 90%;
+    }
+    
+    .site-main .brand-area, 
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+}
+
+
